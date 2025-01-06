@@ -1,0 +1,136 @@
+<h1 style="color: #181642" class="text-center mb-3">Update Job</h1>
+
+<form action="/updatejob" method="post">
+  <% if(data){ %>
+  <div class="mb-3">
+    <label for="id" class="form-label">ID</label>
+    <input
+      type="text"
+      class="form-control"
+      id="id"
+      name="id"
+      value="<%=data.id%>"
+    />
+  </div>
+
+  <div class="mb-3">
+    <label for="jobCategory" class="form-label">jobCategory</label>
+    <input
+      type="text"
+      class="form-control"
+      id="jobCategory"
+      name="jobCategory"
+      value="<%=data.jobCategory%>"
+    />
+  </div>
+
+  <div class="mb-3">
+    <label for="jobDesignation" class="form-label">jobDesignation</label>
+    <input
+      type="text"
+      class="form-control"
+      id="jobDesignation"
+      name="jobDesignation"
+      step="0.01"
+      value="<%=data.jobDesignation%>"
+    />
+  </div>
+
+  <div class="mb-3">
+    <label for="jobLocation" class="form-label">jobLocation</label>
+    <input
+      type="text"
+      class="form-control"
+      id="jobLocation"
+      name="jobLocation"
+      step="0.01"
+      value="<%=data.jobLocation%>"
+    />
+  </div>
+
+  <div class="mb-3">
+    <label for="companyName" class="form-label">companyName</label>
+    <input
+      type="text"
+      class="form-control"
+      id="companyName"
+      name="companyName"
+      step="0.01"
+      value="<%=data.companyName%>"
+    />
+  </div>
+
+  <div class="mb-3">
+    <label for="salary" class="form-label">salary</label>
+    <input
+      type="text"
+      class="form-control"
+      id="salary"
+      name="salary"
+      step="0.01"
+      value="<%=data.salary%>"
+    />
+  </div>
+
+  <div class="mb-3">
+    <label for="applyBy" class="form-label">applyBy</label>
+    <input
+      type="text"
+      class="form-control"
+      id="applyBy"
+      name="applyBy"
+      step="0.01"
+      value="<%=data.applyBy%>"
+    />
+  </div>
+
+  <div class="mb-3">
+    <label for="skillsRequired" class="form-label">skillsRequired</label>
+    <input
+      type="text"
+      class="form-control"
+      id="skillsRequired"
+      name="skillsRequired"
+      step="0.01"
+      value="<%=data.skillsRequired%>"
+    />
+  </div>
+
+  <div class="mb-3">
+    <label for="numberOfOpening" class="form-label">numberOfOpening</label>
+    <input
+      type="number"
+      class="form-control"
+      id="numberOfOpening"
+      name="numberOfOpening"
+      step="0.01"
+      value="<%=data.numberOfOpening%>"
+    />
+  </div>
+
+  <div class="mb-3">
+    <label for="jobPosted" class="form-label">jobPosted</label>
+    <input
+      type="text"
+      class="form-control"
+      id="jobPosted"
+      name="jobPosted"
+      step="0.01"
+      value="<%=data.jobPosted%>"
+    />
+  </div>
+
+  <div class="mb-3">
+    <label for="applicants" class="form-label">applicants</label>
+    <input
+      type="number"
+      class="form-control"
+      id="applicants"
+      name="applicants"
+      step="0.01"
+      value="<%=data.applicants%>"
+    />
+  </div>
+  <% } %>
+  <button type="submit" class="btn btn-primary">Update Job</button>
+</form>

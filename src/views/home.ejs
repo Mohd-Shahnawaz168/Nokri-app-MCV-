@@ -1,0 +1,58 @@
+<div class="homecontainer">
+  <div class="leftside">
+    <div class="left p-2">
+      <h1 class="text-custom-color main-heading">
+        A comprehensive platform for reliable
+      </h1>
+      <h2 class="text-custom-color ml12">job opportunity and internship</h2>
+      <h5 class="text-custom-color">Get Discovered. Get Hired.</h5>
+
+      <% if(reqr||requ){ %>
+      <div></div>
+      <% } else {%>
+      <div class="actions">
+        <button class="btn btn-primary">
+          <div class="dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              i'm a job Seeker
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/login">Login</a></li>
+              <li><a class="dropdown-item" href="/register">register</a></li>
+            </ul>
+          </div>
+        </button>
+
+        <button class="btn btn-primary">
+          <div class="dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Recruiter
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/recruitlogin">Login</a></li>
+              <li>
+                <a class="dropdown-item" href="/recruitregister">register </a>
+              </li>
+            </ul>
+          </div>
+        </button>
+      </div>
+      <% } %>
+    </div>
+  </div>
+  <div class="right">
+    <img src="/banner/banner.png" alt="banner" />
+  </div>
+</div>
